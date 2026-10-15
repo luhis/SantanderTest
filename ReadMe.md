@@ -29,3 +29,11 @@ dotnet run
 # Testing the Endpoint
 
 Use the SantanderTest.Test/RestClient/Best.http file to run the endpoint in your IDE, or the scalar web client at http://localhost:5133/scalar/v1
+
+# Enhancements
+
+- It would benefit from increased test coverage.
+- It should really have CORS configured for security.
+- Health Checks need adding for monitoring in prod, along with logging
+- Retry logic on accessing the HN API, currently if one story fails it will blow.
+- Limiting the concurrency on the Story fetch, it works at 500 stories, but it's not very graceful or considerate.
